@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saru's Gift</title>
+    <style>
+       .heart {
+           font-size: 30px;
+           position:absolute;
+           animation:heart 3s infinite;
+       }
+       @keyframes heart{
+           from {top:0%}
+           to {top:100%}
+       }
+         .heart1 {
+           font-size: 30px;
+           position:absolute;
+           animation:heart1 7s infinite;
+           left:5%;
+       }
+       @keyframes heart1{
+           from {top:0%}
+           to {top:100%}
+       }
+        .heart2 {
+           font-size: 30px;
+           position:absolute;
+           animation:heart2 5s infinite;
+           left:10%;
+       }
+       @keyframes heart2{
+           from {top:0%}
+           to {top:100%}
+       }
+        .heart3 {
+           font-size: 30px;
+           position:absolute;
+           animation:heart3 2s infinite;
+           left:20%;
+       }
+       @keyframes heart3{
+           from {top:0%}
+           to {top:100%}
+       }
+        .heart4 {
+           font-size: 30px;
+           position:absolute;
+           animation:heart4 4s infinite;
+           left:40%;
+       }
+       @keyframes heart4{
+           from {top:0%}
+           to {top:100%}
+       }
+        .heart5 {
+           font-size: 30px;
+           position:absolute;
+           animation:heart5 9s infinite;
+           left:55%
+       }
+       @keyframes heart5{
+           from {top:0%}
+           to {top:100%}
+       }
+        .heart6 {
+           font-size: 30px;
+           position:absolute;
+           animation:heart6 5s infinite;
+           left:65%;
+       }
+       @keyframes heart6{
+           from {top:0%}
+           to {top:100%}
+       }
+        .heart7 {
+           font-size: 30px;
+           position:absolute;
+           animation:heart7 8s infinite;
+           left:80%;
+       }
+       @keyframes heart7{
+           from {top:0%}
+           to {top:100%}
+       }
+        .heart8 {
+           font-size: 30px;
+           position:absolute;
+           animation:heart8 4s infinite;
+           left:95%;
+       }
+       @keyframes heart8{
+           from {top:0%}
+           to {top:100%}
+       }
+        body {
+            box-sizing: border-box;
+            animation: load 5s 1;
+        }
+        @keyframes load {
+            0% {opacity: 0;}
+            25% {opacity: 0.2;}
+            50% {opacity: 0.5;}
+            75% {opacity: 0.7;}
+            100% {opacity: 1;}
+        }
+        .page1 {
+            background-image:linear-gradient(147deg,  black 50% ,  rgb(83, 80, 80) 94%);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: grid;
+            z-index: 15px;
+            overflow: hidden;
+            top:0;
+            left:0;
+        }
+        .continue {
+            background-color: rgb(0, 0, 0);
+            border-color: rgb(255, 254, 254);
+            color: white;
+            border-radius: 5px;
+            animation: bgchange 5s infinite;
+            font-size: 20px;
+            padding: 10px;
+        }
+        @keyframes bgchange {
+            40% {background-color: rgb(224, 71, 71);font-size: 23px;}
+            60% {background-color: rgb(38, 230, 47);font-size: 20px;}
+            80% {background-color: rgb(24, 175, 202);font-size: 23px;}
+            90% {background-color: rgb(175, 21, 167);font-size: 20px;}
+        }
+        .container{
+            background-color: pink;
+            width: 60%;
+            border-radius: 50%;
+            top: 20%;
+            position: relative;
+            animation: move 10s infinite;
+            font-size: 20px;
+            text-align: center;
+            border: 3px solid;
+            border-color: rgb(252, 101, 47);
+            box-shadow: 1px 2px 3px rgb(161, 160, 160);
+            padding:25px;
+        }
+        @keyframes move {
+            25% {top: 25%;}
+            50% {top: 20%;}
+            75% {top:25%;}
+        }
+        .center {
+            top: auto;
+            bottom: 1%;
+            position: relative;
+            align-content: center;
+
+        }
+        label[for=test] {
+  display:block;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+
+.reversible {
+  position: relative;
+  width: 250px;
+  margin: 50px auto;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 1s ease;
+  transition: all 1s
+}
+
+input[type=checkbox]:checked + label .reversible {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.reversible .card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.tile-front {
+  z-index: 2;
+}
+
+.tile-back {
+  -webkit-transform: rotateY( 180deg);
+  transform: rotateY( 180deg);
+}
+
+.card-body {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.card-body {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+.card-footer {
+  font-size: 1.5rem;
+}
+
+
+.card {
+  background-color: black;
+  height: 25rem;
+  transition: all 1.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow:3px 5px 7px black , 7px 9px 11px silver;
+  padding: 10px;
+  border: 3px solid;
+  border-color: yellowgreen;
+}
+.name {
+    background-color:grey;
+    color:white;
+    border-bottom-right-radius:20%;
+    border-bottom-left-radius:20%;
+    font-size:20px;
+    text-align:center;
+}
+.page2 {
+background-image:url("https://i.giphy.com/media/yc2pHdAoxVOrJ2m5Ha/200w.webp");
+background-position: center center;
+height:100vh;
+}
+.heartbeat {
+    font-size:3rem;
+    position:relative;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="page1" id="Page1">
+    <div class="name">   <br>   <br>  Dedicated Towards the most important person in my life 🤗
+       <div class="heartbeat">♥️</div>
+    
+    </div>
+    <div class="heart">♥️</div>
+<div class="heart1">🤍</div>
+<div class="heart2">🤎</div>
+<div class="heart3">💗</div>
+<div class="heart4">💕</div>
+<div class="heart5">💖</div>
+<div class="heart6">💝</div>
+<div class="heart7">🧡</div>
+<div class="heart8">💞</div>
+        <center><div class="container">You are my Soul <br>You are my brain <br> You are my Heart
+            <br>You are my Oxygen <br> You are everthing ,  I need to be alive
+        </div></center>
+    <div class="center" align="center"><a href="#" onclick="return show('Page2','Page1');"><button class="continue">Continue </button></a></div></a>
+    </div>
+    <div id="Page2" style="display:none" class="page2">
+    <div class="heart">♥️</div>
+<div class="heart1">🤍</div>
+<div class="heart2">🤎</div>
+<div class="heart3">💗</div>
+<div class="heart4">💕</div>
+<div class="heart5">💖</div>
+<div class="heart6">💝</div>
+<div class="heart7">🧡</div>
+<div class="heart8">💞</div>
+
+<!-- Flip Card from :- https://stackoverflow.com/questions/52239265/how-can-i-make-a-card-flip-with-css-click-event-using-an-input-box-->
+
+<input type="checkbox" id="test" style="opacity:0;">
+<label for="test">
+  <div class="reversible">
+     <div class="card tile-back">
+        <div class="card-body">
+            <p><img src="img\sar.jpg" alt="" style="width: 80%;height: 50%;border-radius: 100%;"><br>😉 I love u to the moon and back 🌹 </p>
+         </div>
+      </div>
+      <div class="card tile-front">
+         <div class="card-body">
+       <br>
+            You told me how to live life !🥰 <br>
+            And Changed my life in an Awesome way !😃
+            <br> 
+            You are always with me at Every Moment 🤗
+         </div>
+      </div>
+</div>  
+</label>
+
+    
+    </div>
+    <script> function show(shown, hidden) { document.getElementById(shown).style.display='block'; document.getElementById(hidden).style.display='none'; return false; } </script>    
+    <audio controls style=" display:none;" loop   id="a"  >
+    <source  src="https://dl.dropbox.com/s/e3r7nz9lt1d4sjr/Tera_Yaar_Hoon_Main__Ash_%26_Pikachu_Friendship__Emotional_Song%28256k%29.mp3?dl=1">
+</body>
+</html>
